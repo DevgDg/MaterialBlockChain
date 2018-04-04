@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-fab (click)="sideNav.toggle()">Menu</button>
+      <button mat-button routerLink="Home" (click)="addBlock()">Home</button>
+      <button mat-button routerLink="Dashboard">Dashboard</button>
+      <button mat-button routerLink="Contacts">Contacts</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav #sideNav mode="side">
+    My SideNav
+  </mat-sidenav>
+ <router-outlet></router-outlet>
+</mat-sidenav-container>
+<!--<ul>
+  <li><a routerLink="Home">Home</a></li>
+  <li><a routerLink="Dashboard">Dashboard</a></li>
+  <li><a routerLink="Contatcs">Contatcs</a></li>
+</ul>-->
